@@ -11,6 +11,11 @@
     <div>
         <h1>Portfolio</h1>
     </div>
+    <div class="openmenu">
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
     <div class="nav">
         <a href="#home">Home</a>
         <a href="#skills">Skills</a>
@@ -149,17 +154,17 @@
                     <td>VIGNESH S</td>
                 </tr>
                 <tr>
-                    <td><span>EMAIL-ID</span></td>
+                    <td><span>EMAIL ID</span></td>
                     <td>:</td>
                     <td>VIGNESH12A240@GMAIL.COM</td>
                 </tr>
                 <tr>
-                    <td><span>MOBILE-NO</span></td>
+                    <td><span>MOBILE NO</span></td>
                     <td>:</td>
                     <td>+91-8754582761</td>
                 </tr>
                 <tr>
-                    <td><span>PROFESSION:</span></td>
+                    <td><span>PROFILE</span></td>
                     <td>:</td>
                     <td>STUDENT</td>
                 </tr>
@@ -179,8 +184,15 @@
             <p>As a naturally curious individual, I constantly seek to expand my knowledge and stay up-to-date with the latest advancements in computer science. Whether it's artificial intelligence, machine learning, cybersecurity, or web development, I am always eager to learn and apply new concepts to real-world scenarios.</p>
         </div>
     </section>
-    <footer class="footer">
+    <section class="footer">
         <p>&copy; This is a Portfolio. All rights reserved.</p>
-    </footer>
+    </section>
 </body>
+<script>
+    const menu=document.querySelector('.openmenu');
+    const menus=document.querySelector('.nav');
+    menu.addEventListener('click',()=>{
+        menus.classList.toggle('showmenu');
+    })
+</script>
 </html>
